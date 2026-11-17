@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Vieira Garcia</title>
+
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <div id="mySidebar" class="sidebar">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">✖️</a>
+        <a href="index.html">Inicio</a>
+        <a href="#Texto">Sobre mim</a>
+        <a href="#DadosPessoais">Dados pessoais</a>
+        <a href="#Formacao">Formação</a>
+        <a href="#Conhecimentos">Conhecimentos</a>
+        <a href="#Experiencia">Experiências</a>
+        <a href="#Habilidades">Habilidades</a>
+        <a href="#Idiomas">Idiomas</a>
+
+    </div>
+
+    <header>
+        <h1>Lucas Vieira Garcia</h1>
+    </header>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">
+            <img src="imagens/icone.png" alt="Menu" class="iconeMenu">
+            Menu
+        </button>
+    </div>
+
+    <section id="DadosPessoais">
+
+        <h2>Dados pessoais</h2>
+
+        <img src="imagens/Eu.jpeg" alt="Eu" class="fotoPerfil">
+
+        <h5>Nascimento: 14/09/2006</h5>
+        <h5>Email: lucasvieiragarcia53@gmail.com</h5>
+        <h5>Telefone: (41) 99849-0413</h5>
+
+    </section>
+
+    <section id="Texto">
+
+        <h2>Sobre mim</h2>
+
+        <h5>
+            Olá, meu nome é Lucas e tenho grande interesse na área de criação visual
+            para jogos digitais, especialmente no desenvolvimento de sprites,
+            cenários, modelagem 3D e identidade artística para projetos de games.
+        </h5>
+
+        <h5>
+            Possuo experiência com ferramentas de design e produção visual,
+            buscando sempre criar elementos que transmitam personalidade
+            e fortaleçam a experiência do jogador através da arte.
+        </h5>
+
+        <h5>
+            Meu objetivo profissional é atuar em equipes criativas de
+            desenvolvimento de jogos, contribuindo com design visual,
+            conceitos artísticos, ambientação e produção gráfica para
+            jogos 2D e 3D.
+        </h5>
+
+    </section>
+
+    <section>
+
+        <details>
+            <summary id="Formacao">Formação Ensino Fundamental II</summary>
+
+            <p>Ensino Fundamental II</p>
+            <p>Colégio Paulo Leminski</p>
+            <p>02/2017 - 12/2021</p>
+
+        </details>
+
+        <details>
+
+            <summary>Formação Ensino Médio</summary>
+
+            <p>Ensino Médio integrado ao curso técnico de Programação de Jogos Digitais</p>
+            <p>IFPR - Instituto Federal do Paraná, Campus Curitiba</p>
+            <p>02/2021 - 12/2026</p>
+
+        </details>
+
+    </section>
+
+    <section id="Conhecimentos">
+
+        <h2>Conhecimentos técnicos</h2>
+
+        <h5>
+            Ferramentas: Blender, Unity, FMOD, Cubase,
+            Photoshop, Visual Studio Code
+        </h5>
+
+        <h5>
+            Áreas de atuação: Sprites 2D, Cenários,
+            Modelagem 3D, Concept Art,
+            Interface Visual e Design de Som
+        </h5>
+
+    </section>
+
+    <section id="Experiencia">
+
+        <h2>Experiências</h2>
+
+        <h5>
+            Projeto em grupo desenvolvido para a disciplina de
+            Programação de Jogos 2D no IFPR, onde fui responsável
+            pela criação de sprites, identidade visual e ambientação
+            artística da primeira fase do jogo, baseada em ritmo musical.
+        </h5>
+
+        <h5>
+            Projeto anual de desenvolvimento de jogo 3D realizado no IFPR,
+            focado em desafios matemáticos. Participei da criação de modelos 3D,
+            elementos visuais e composição dos cenários utilizados ao longo das fases.
+        </h5>
+
+    </section>
+
+    <section id="Habilidades">
+
+        <h2>Habilidades</h2>
+
+        <h5>Criatividade</h5>
+        <h5>Design Visual</h5>
+        <h5>Composição Artística</h5>
+        <h5>Trabalho em equipe</h5>
+        <h5>Atenção aos detalhes</h5>
+
+    </section>
+
+    <section id="Idiomas">
+
+        <h2>Idiomas</h2>
+
+        <h5>Inglês avançado</h5>
+        <h5>Português nativo</h5>
+        <h5>Espanhol intermediário</h5>
+
+    </section>
+
+    <section id="Portfolio">
+
+        <h2>Meu Portfólio</h2>
+
+        <div class="carousel-container">
+
+            <button class="carousel-btn prev-btn" onclick="mudarSlide(-1)">
+                &#10094;
+            </button>
+
+            <div class="carousel-wrapper">
+
+                <div class="carousel-track" id="carouselTrack">
+
+                    <img
+                        src="imagens/image_casa.png"
+                        alt="Modelo 3D Casa"
+                        class="carousel-item"
+                        onclick="abrirPopup(
+                            'imagens/image_casa.png',
+                            'Modelo 3D Casa',
+                            '2025',
+                            'Projeto de modelagem 3D desenvolvido para a matéria de ilustração e modelagem 2D e 3D.'
+                        )"
+                    >
+
+                    <img
+                        src="imagens/image_anarchy.jpg"
+                        alt="Long Life Anarchy"
+                        class="carousel-item"
+                        onclick="abrirPopup(
+                            'imagens/image_anarchy.jpg',
+                            'Long Life Anarchy',
+                            '2025',
+                            'Jogo desenvolvido para a matéria de Programação de jogos 2D, projeto feito em dupla de duas fases onde fiz toda a fase 1 sobre um jogo de ritmo.'
+                        )"
+                    >
+
+                    <img
+                        src="imagens/image_heist.jpg"
+                        alt="The Athenian Heist"
+                        class="carousel-item"
+                        onclick="abrirPopup(
+                            'imagens/image_heist.jpg',
+                            'The Athenian Heist',
+                            '2024',
+                            'Projeto de jogo para as matérias de Programação de jogos 3D e tópicos especiais com foco em ambientação visual, projeto feito em trio sobre um jogo escape room com temática grega.'
+                        )"
+                    >
+
+                    <img
+                        src="imagens/image_mathblock.png"
+                        alt="Jogo Matemático 3D"
+                        class="carousel-item"
+                        onclick="abrirPopup(
+                            'imagens/image_mathblock.png',
+                            'Jogo Matemático 3D',
+                            '2025',
+                            'Projeto de conclusão de curso feito em quinteto sobre um jogo 3D matemático com foco em usar os cubos numéricos para avançar de fase.'
+                        )"
+                    >
+
+                    <!-- NOVO JOGO BREAKOUT -->
+
+                    <img
+                        src="imagens/image_breakout.png"
+                        alt="Breakout - Jogar"
+                        class="carousel-item"
+                        title="Clique para jogar Breakout"
+                        onclick="window.open(
+                            'https://lucasvieiragarcia53.github.io/Breakout-Jogos-4/',
+                            '_blank'
+                        )"
+                    >
+
+                </div>
+
+            </div>
+
+            <button class="carousel-btn next-btn" onclick="mudarSlide(1)">
+                &#10095;
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- POPUP -->
+
+    <div id="popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="fechar-popup" onclick="fecharPopup()">
+                &times;
+            </span>
+
+            <img id="popup-img" src="" alt="Imagem ampliada">
+            <h2 id="popup-titulo"></h2>
+            <h4 id="popup-ano"></h4>
+            <p id="popup-descricao"></p>
+
+        </div>
+
+    </div>
+
+    <footer id="footer">
+        <p>&copy; Todos os direitos reservados a Lucas Vieira Garcia</p>
+    </footer>
+
+    <script src="javascript/script.js"></script>
+
+</body>
+
+</html>
