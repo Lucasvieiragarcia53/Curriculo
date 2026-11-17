@@ -1,4 +1,5 @@
-// Funções da Sidebar (Mantenha como estão)
+
+// Funções da Sidebar
 function openNav(){
     document.getElementById("mySidebar").style.width = "300px";
     document.getElementById("main").style.marginLeft = "300px";
@@ -9,7 +10,8 @@ function closeNav(){
     document.getElementById("main").style.marginLeft = "0";
 }
 
-// Lógica do Carrossel Infinito
+
+// Lógica do Carrossel
 const totalImagens = 5;
 let indexAtual = 0;
 
@@ -33,8 +35,16 @@ function mudarSlide(direcao) {
     const larguraItem = itens[0].offsetWidth;
     const gap = 15;
     const movimento = indexAtual * (larguraItem + gap);
+
     track.style.transform = `translateX(-${movimento}px)`;
 }
+
+
+// Redirecionar para o jogo Breakout
+function abrirBreakout() {
+    window.location.href = "https://lucasvieiragarcia53.github.io/Breakout-Jogos-4/";
+}
+
 
 /* POPUP */
 
@@ -51,6 +61,7 @@ function fecharPopup() {
 
     document.getElementById("popup").style.display = "none";
 }
+
 
 /* FECHAR AO CLICAR FORA */
 
